@@ -1,0 +1,27 @@
+##############################
+###### GENERAL SETTINGS ######
+##############################
+server:
+  port: 8081
+  # Show error message in JSON response
+  error:
+    include-message: always
+    include-stacktrace: never
+  servlet:
+    context-path: /api/v3
+
+spring:
+  application:
+    name: security
+  config:
+    import:
+      - application-controller.yml
+      - application-database.yml
+      - application-security.yml
+
+##############################
+#### SPRING DEBUG SETTING ####
+##############################
+logging:
+  level:
+    root: debug

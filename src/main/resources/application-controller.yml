@@ -1,0 +1,10 @@
+################################
+### CONTROLLER CONTEXT PATHS ###
+################################
+context:
+  path:
+    auth: /auth
+    demo: /demo
+    users: /users
+  cache:
+    users: users
